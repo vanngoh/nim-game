@@ -19,7 +19,7 @@ def solution(buckets):
             return (0, 0)
 
     special_index = has_non_one_and_all_ones(buckets)
-    if special_index != False:
+    if special_index is not False:
         if n % 2 == 0:
             return (special_index, buckets[special_index])
         else:
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     # # print(solution([40123, 10298, 40123, 990901, 990901, 990901,990901]))
     # # print(solution([1, 802741, 8, 1, 9764, 990901]))
     # print(solution([524286,1,2,8,524287,32]))
-    print(solution([1, 3]))
+    print(solution([2, 1]))
     # print(solution([7, 1]))
     # # print(solution([262142,1,2,8,524287,32]))
 
